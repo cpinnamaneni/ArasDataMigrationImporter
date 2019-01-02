@@ -13,3 +13,17 @@ C:\Chaitanya\Offical\Personal Projects\Aras Data Importer\ArasDataMigrationImpor
 C:\Chaitanya\Offical\Personal Projects\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.csproj.CopyComplete
 C:\Chaitanya\Offical\Personal Projects\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.SelectCAD.resources
 C:\Chaitanya\Offical\Personal Projects\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.ArasConfigFile.resources
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\bin\Debug\ArasDataMigrationImporter.exe.config
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.exe
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.pdb
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\bin\Debug\ArasDataMigrationImporter.exe
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\bin\Debug\ArasDataMigrationImporter.pdb
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.csprojAssemblyReference.cache
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.ArasConfigFile.resources
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.MainForm.resources
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.Properties.Resources.resources
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.SelectCAD.resources
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.TextFileToAras.resources
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.csproj.GenerateResource.cache
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.csproj.CoreCompileInputs.cache
+C:\Users\Chaitanya P\Documents\GitHub\Aras\ArasDataMigrationImporter\Aras Data Importer\ArasDataMigrationImporter\ArasDataMigrationImporter\obj\Debug\ArasDataMigrationImporter.csproj.CopyComplete

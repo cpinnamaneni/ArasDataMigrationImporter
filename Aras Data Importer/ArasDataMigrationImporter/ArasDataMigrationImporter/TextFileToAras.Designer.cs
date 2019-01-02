@@ -47,11 +47,6 @@
             this.InputFileExplore = new System.Windows.Forms.Button();
             this.InputTextFilePath = new System.Windows.Forms.TextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.cadTypeGroup = new System.Windows.Forms.GroupBox();
-            this.cadConnectorTypeList = new System.Windows.Forms.ComboBox();
-            this.cadConnectorLabel = new System.Windows.Forms.Label();
-            this.cadTypeLabel = new System.Windows.Forms.Label();
-            this.cadTypeList = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.statusTextBox = new System.Windows.Forms.RichTextBox();
             this.loginButton = new System.Windows.Forms.Button();
@@ -65,22 +60,21 @@
             this.urlLabel = new System.Windows.Forms.Label();
             this.urlBox = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.validateButton = new System.Windows.Forms.ToolStripButton();
+            this.settingsButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.cadImportButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.guideButton = new System.Windows.Forms.ToolStripButton();
+            this.infoButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitButton = new System.Windows.Forms.ToolStripButton();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.inputTextFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.logFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.validateButton = new System.Windows.Forms.ToolStripButton();
-            this.settingsButton = new System.Windows.Forms.ToolStripButton();
-            this.cadImportButton = new System.Windows.Forms.ToolStripButton();
-            this.guideButton = new System.Windows.Forms.ToolStripButton();
-            this.infoButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.exitButton = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1.SuspendLayout();
-            this.cadTypeGroup.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -88,7 +82,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(846, 787);
+            this.progressBar1.Location = new System.Drawing.Point(846, 790);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(243, 18);
             this.progressBar1.Step = 1;
@@ -105,7 +99,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(454, 247);
+            this.label1.Location = new System.Drawing.Point(454, 155);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 17);
             this.label1.TabIndex = 55;
@@ -113,14 +107,14 @@
             // 
             // techLogFilePath
             // 
-            this.techLogFilePath.Location = new System.Drawing.Point(554, 244);
+            this.techLogFilePath.Location = new System.Drawing.Point(554, 152);
             this.techLogFilePath.Name = "techLogFilePath";
             this.techLogFilePath.Size = new System.Drawing.Size(482, 22);
             this.techLogFilePath.TabIndex = 54;
             // 
             // techLogFileExploreButton
             // 
-            this.techLogFileExploreButton.Location = new System.Drawing.Point(1043, 244);
+            this.techLogFileExploreButton.Location = new System.Drawing.Point(1043, 152);
             this.techLogFileExploreButton.Name = "techLogFileExploreButton";
             this.techLogFileExploreButton.Size = new System.Drawing.Size(40, 23);
             this.techLogFileExploreButton.TabIndex = 53;
@@ -131,7 +125,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(468, 210);
+            this.label2.Location = new System.Drawing.Point(468, 118);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 17);
             this.label2.TabIndex = 52;
@@ -139,7 +133,7 @@
             // 
             // repeteFileExploreButton
             // 
-            this.repeteFileExploreButton.Location = new System.Drawing.Point(1043, 203);
+            this.repeteFileExploreButton.Location = new System.Drawing.Point(1043, 111);
             this.repeteFileExploreButton.Name = "repeteFileExploreButton";
             this.repeteFileExploreButton.Size = new System.Drawing.Size(40, 23);
             this.repeteFileExploreButton.TabIndex = 51;
@@ -149,7 +143,7 @@
             // 
             // repeatFilePath
             // 
-            this.repeatFilePath.Location = new System.Drawing.Point(554, 205);
+            this.repeatFilePath.Location = new System.Drawing.Point(554, 113);
             this.repeatFilePath.Name = "repeatFilePath";
             this.repeatFilePath.Size = new System.Drawing.Size(482, 22);
             this.repeatFilePath.TabIndex = 50;
@@ -157,23 +151,25 @@
             // delimiterLabel
             // 
             this.delimiterLabel.AutoSize = true;
-            this.delimiterLabel.Location = new System.Drawing.Point(374, 130);
+            this.delimiterLabel.Location = new System.Drawing.Point(341, 130);
             this.delimiterLabel.Name = "delimiterLabel";
             this.delimiterLabel.Size = new System.Drawing.Size(63, 17);
             this.delimiterLabel.TabIndex = 49;
             this.delimiterLabel.Text = "Delimiter";
+            this.delimiterLabel.Visible = false;
             // 
             // delimiterField
             // 
-            this.delimiterField.Location = new System.Drawing.Point(442, 130);
+            this.delimiterField.Location = new System.Drawing.Point(410, 127);
             this.delimiterField.Name = "delimiterField";
             this.delimiterField.Size = new System.Drawing.Size(27, 22);
             this.delimiterField.TabIndex = 48;
+            this.delimiterField.Visible = false;
             // 
             // logFileTextLabel
             // 
             this.logFileTextLabel.AutoSize = true;
-            this.logFileTextLabel.Location = new System.Drawing.Point(483, 169);
+            this.logFileTextLabel.Location = new System.Drawing.Point(483, 77);
             this.logFileTextLabel.Name = "logFileTextLabel";
             this.logFileTextLabel.Size = new System.Drawing.Size(58, 17);
             this.logFileTextLabel.TabIndex = 47;
@@ -181,14 +177,14 @@
             // 
             // logFilePath
             // 
-            this.logFilePath.Location = new System.Drawing.Point(554, 166);
+            this.logFilePath.Location = new System.Drawing.Point(554, 74);
             this.logFilePath.Name = "logFilePath";
             this.logFilePath.Size = new System.Drawing.Size(482, 22);
             this.logFilePath.TabIndex = 46;
             // 
             // logFileExplore
             // 
-            this.logFileExplore.Location = new System.Drawing.Point(1043, 166);
+            this.logFileExplore.Location = new System.Drawing.Point(1043, 74);
             this.logFileExplore.Name = "logFileExplore";
             this.logFileExplore.Size = new System.Drawing.Size(40, 23);
             this.logFileExplore.TabIndex = 45;
@@ -199,7 +195,7 @@
             // inputFilelabel
             // 
             this.inputFilelabel.AutoSize = true;
-            this.inputFilelabel.Location = new System.Drawing.Point(483, 132);
+            this.inputFilelabel.Location = new System.Drawing.Point(483, 40);
             this.inputFilelabel.Name = "inputFilelabel";
             this.inputFilelabel.Size = new System.Drawing.Size(65, 17);
             this.inputFilelabel.TabIndex = 44;
@@ -207,7 +203,7 @@
             // 
             // InputFileExplore
             // 
-            this.InputFileExplore.Location = new System.Drawing.Point(1043, 125);
+            this.InputFileExplore.Location = new System.Drawing.Point(1043, 33);
             this.InputFileExplore.Name = "InputFileExplore";
             this.InputFileExplore.Size = new System.Drawing.Size(40, 23);
             this.InputFileExplore.TabIndex = 43;
@@ -217,7 +213,7 @@
             // 
             // InputTextFilePath
             // 
-            this.InputTextFilePath.Location = new System.Drawing.Point(554, 127);
+            this.InputTextFilePath.Location = new System.Drawing.Point(554, 35);
             this.InputTextFilePath.Name = "InputTextFilePath";
             this.InputTextFilePath.Size = new System.Drawing.Size(482, 22);
             this.InputTextFilePath.TabIndex = 42;
@@ -228,73 +224,17 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 783);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 785);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1112, 25);
             this.statusStrip1.TabIndex = 41;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // cadTypeGroup
-            // 
-            this.cadTypeGroup.Controls.Add(this.cadConnectorTypeList);
-            this.cadTypeGroup.Controls.Add(this.cadConnectorLabel);
-            this.cadTypeGroup.Controls.Add(this.cadTypeLabel);
-            this.cadTypeGroup.Controls.Add(this.cadTypeList);
-            this.cadTypeGroup.Location = new System.Drawing.Point(563, 11);
-            this.cadTypeGroup.Name = "cadTypeGroup";
-            this.cadTypeGroup.Size = new System.Drawing.Size(520, 89);
-            this.cadTypeGroup.TabIndex = 40;
-            this.cadTypeGroup.TabStop = false;
-            // 
-            // cadConnectorTypeList
-            // 
-            this.cadConnectorTypeList.FormattingEnabled = true;
-            this.cadConnectorTypeList.Items.AddRange(new object[] {
-            "XPLM",
-            "Infor"});
-            this.cadConnectorTypeList.Location = new System.Drawing.Point(129, 57);
-            this.cadConnectorTypeList.Name = "cadConnectorTypeList";
-            this.cadConnectorTypeList.Size = new System.Drawing.Size(121, 24);
-            this.cadConnectorTypeList.TabIndex = 3;
-            this.cadConnectorTypeList.Visible = false;
-            // 
-            // cadConnectorLabel
-            // 
-            this.cadConnectorLabel.AutoSize = true;
-            this.cadConnectorLabel.Location = new System.Drawing.Point(25, 57);
-            this.cadConnectorLabel.Name = "cadConnectorLabel";
-            this.cadConnectorLabel.Size = new System.Drawing.Size(105, 17);
-            this.cadConnectorLabel.TabIndex = 2;
-            this.cadConnectorLabel.Text = "CAD Connector";
-            // 
-            // cadTypeLabel
-            // 
-            this.cadTypeLabel.AutoSize = true;
-            this.cadTypeLabel.Location = new System.Drawing.Point(25, 27);
-            this.cadTypeLabel.Name = "cadTypeLabel";
-            this.cadTypeLabel.Size = new System.Drawing.Size(72, 17);
-            this.cadTypeLabel.TabIndex = 1;
-            this.cadTypeLabel.Text = "CAD Type";
-            // 
-            // cadTypeList
-            // 
-            this.cadTypeList.FormattingEnabled = true;
-            this.cadTypeList.Items.AddRange(new object[] {
-            "SolidWorks",
-            "Creo",
-            "NX",
-            "SolidEdge"});
-            this.cadTypeList.Location = new System.Drawing.Point(129, 21);
-            this.cadTypeList.Name = "cadTypeList";
-            this.cadTypeList.Size = new System.Drawing.Size(159, 24);
-            this.cadTypeList.TabIndex = 0;
-            this.cadTypeList.Visible = false;
-            // 
             // groupBox1
             // 
             this.groupBox1.AutoSize = true;
             this.groupBox1.Controls.Add(this.statusTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(13, 283);
+            this.groupBox1.Location = new System.Drawing.Point(13, 218);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1076, 493);
             this.groupBox1.TabIndex = 39;
@@ -393,7 +333,7 @@
             // 
             this.urlBox.Location = new System.Drawing.Point(114, 35);
             this.urlBox.Name = "urlBox";
-            this.urlBox.Size = new System.Drawing.Size(378, 22);
+            this.urlBox.Size = new System.Drawing.Size(355, 22);
             this.urlBox.TabIndex = 29;
             // 
             // toolStrip1
@@ -421,34 +361,6 @@
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 27);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // inputTextFileDialog
-            // 
-            this.inputTextFileDialog.Filter = "Text files|*.txt|All files|*.*";
-            // 
             // validateButton
             // 
             this.validateButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -471,6 +383,11 @@
             this.settingsButton.ToolTipText = "Settings";
             this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
+            // 
             // cadImportButton
             // 
             this.cadImportButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -480,6 +397,11 @@
             this.cadImportButton.Size = new System.Drawing.Size(24, 24);
             this.cadImportButton.Text = "Import CAD Data";
             this.cadImportButton.Click += new System.EventHandler(this.cadImportButton_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // guideButton
             // 
@@ -500,6 +422,11 @@
             this.infoButton.Size = new System.Drawing.Size(24, 24);
             this.infoButton.Text = "Info";
             // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
+            // 
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -511,6 +438,11 @@
             this.toolStripButton1.ToolTipText = "Back to Main Window";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 27);
+            // 
             // exitButton
             // 
             this.exitButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -521,6 +453,14 @@
             this.exitButton.Size = new System.Drawing.Size(24, 24);
             this.exitButton.Text = "Close";
             this.exitButton.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // inputTextFileDialog
+            // 
+            this.inputTextFileDialog.Filter = "Text files|*.txt|All files|*.*";
             // 
             // TextFileToAras
             // 
@@ -544,7 +484,6 @@
             this.Controls.Add(this.InputFileExplore);
             this.Controls.Add(this.InputTextFilePath);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.cadTypeGroup);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.passwordLabel);
@@ -557,11 +496,9 @@
             this.Controls.Add(this.urlLabel);
             this.Controls.Add(this.urlBox);
             this.Name = "TextFileToAras";
-            this.Size = new System.Drawing.Size(1112, 808);
+            this.Size = new System.Drawing.Size(1112, 810);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.cadTypeGroup.ResumeLayout(false);
-            this.cadTypeGroup.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -590,11 +527,6 @@
         private System.Windows.Forms.Button InputFileExplore;
         private System.Windows.Forms.TextBox InputTextFilePath;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.GroupBox cadTypeGroup;
-        private System.Windows.Forms.ComboBox cadConnectorTypeList;
-        private System.Windows.Forms.Label cadConnectorLabel;
-        private System.Windows.Forms.Label cadTypeLabel;
-        private System.Windows.Forms.ComboBox cadTypeList;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RichTextBox statusTextBox;
         private System.Windows.Forms.Button loginButton;
