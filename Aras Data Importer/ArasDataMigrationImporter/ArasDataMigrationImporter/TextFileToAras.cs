@@ -1132,6 +1132,8 @@ namespace ArasDataMigrationImporter
 
         private void toolStripButton1_Click_1(object sender, EventArgs e)
         {
+            this.Parent.Text = "CAD Data Import/Export";
+
             this.Hide();
 
         }

@@ -53,6 +53,7 @@ namespace ArasDataMigrationImporter
 
         private void picBoxTextToAras_Click(object sender, EventArgs e)
         {
+            this.Text = "Import Data from Text file to Aras";
             //textFileToAras1 textFileToAras = new textFileToAras1();
             textFileToAras.Dock = DockStyle.Fill;
             textFileToAras.BringToFront();
@@ -67,6 +68,7 @@ namespace ArasDataMigrationImporter
 
         private void picBoxCADToExcel_Click(object sender, EventArgs e)
         {
+            this.Text = "Export the CAD data into Excel";
             selectCAD.Dock = DockStyle.Fill;
             selectCAD.BringToFront();
             selectCAD.Focus();

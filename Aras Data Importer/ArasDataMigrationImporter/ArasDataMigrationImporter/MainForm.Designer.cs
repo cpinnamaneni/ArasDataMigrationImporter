@@ -32,13 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.picBoxExitButton = new System.Windows.Forms.PictureBox();
-            this.picBoxCADToExcel = new System.Windows.Forms.PictureBox();
             this.picBoxTextToAras = new System.Windows.Forms.PictureBox();
+            this.picBoxCADToExcel = new System.Windows.Forms.PictureBox();
             this.selectCAD = new ArasDataMigrationImporter.SelectCAD();
             this.textFileToAras = new ArasDataMigrationImporter.TextFileToAras();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxExitButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxCADToExcel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTextToAras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxCADToExcel)).BeginInit();
             this.SuspendLayout();
             // 
             // picBoxExitButton
@@ -53,19 +53,6 @@
             this.toolTip1.SetToolTip(this.picBoxExitButton, "Close");
             this.picBoxExitButton.Click += new System.EventHandler(this.picBoxExitButton_Click);
             // 
-            // picBoxCADToExcel
-            // 
-            this.picBoxCADToExcel.Image = global::ArasDataMigrationImporter.Properties.Resources.CAD_to_Excel1;
-            this.picBoxCADToExcel.Location = new System.Drawing.Point(32, 221);
-            this.picBoxCADToExcel.Name = "picBoxCADToExcel";
-            this.picBoxCADToExcel.Size = new System.Drawing.Size(240, 146);
-            this.picBoxCADToExcel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBoxCADToExcel.TabIndex = 0;
-            this.picBoxCADToExcel.TabStop = false;
-            this.picBoxCADToExcel.Click += new System.EventHandler(this.picBoxCADToExcel_Click);
-            this.picBoxCADToExcel.MouseLeave += new System.EventHandler(this.picBoxCADToExcel_MouseLeave);
-            this.picBoxCADToExcel.MouseHover += new System.EventHandler(this.picBoxCADToExcel_MouseHover);
-            // 
             // picBoxTextToAras
             // 
             this.picBoxTextToAras.Image = ((System.Drawing.Image)(resources.GetObject("picBoxTextToAras.Image")));
@@ -79,6 +66,19 @@
             this.picBoxTextToAras.Click += new System.EventHandler(this.picBoxTextToAras_Click);
             this.picBoxTextToAras.MouseLeave += new System.EventHandler(this.picBoxTextToAras_MouseLeave);
             this.picBoxTextToAras.MouseHover += new System.EventHandler(this.picBoxTextToAras_MouseHover);
+            // 
+            // picBoxCADToExcel
+            // 
+            this.picBoxCADToExcel.Image = global::ArasDataMigrationImporter.Properties.Resources.CAD_to_Excel1;
+            this.picBoxCADToExcel.Location = new System.Drawing.Point(32, 221);
+            this.picBoxCADToExcel.Name = "picBoxCADToExcel";
+            this.picBoxCADToExcel.Size = new System.Drawing.Size(240, 146);
+            this.picBoxCADToExcel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxCADToExcel.TabIndex = 0;
+            this.picBoxCADToExcel.TabStop = false;
+            this.picBoxCADToExcel.Click += new System.EventHandler(this.picBoxCADToExcel_Click);
+            this.picBoxCADToExcel.MouseLeave += new System.EventHandler(this.picBoxCADToExcel_MouseLeave);
+            this.picBoxCADToExcel.MouseHover += new System.EventHandler(this.picBoxCADToExcel_MouseHover);
             // 
             // selectCAD
             // 
@@ -114,8 +114,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CAD Data Import/Export";
             ((System.ComponentModel.ISupportInitialize)(this.picBoxExitButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxCADToExcel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTextToAras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxCADToExcel)).EndInit();
             this.ResumeLayout(false);
 
         }

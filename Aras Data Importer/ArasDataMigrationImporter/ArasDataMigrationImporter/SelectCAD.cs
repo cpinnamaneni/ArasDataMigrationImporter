@@ -35,33 +35,37 @@ namespace ArasDataMigrationImporter
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            this.Parent.Text = "CAD Data Import/Export";
             this.Hide();
         }
 
         private void picBoxCreo_Click(object sender, EventArgs e)
         {
+            this.Parent.Text = "Export Creo Data to Excel";
             MessageBox.Show("Creo....");
         }
 
         private void picBoxAutoCAD_Click(object sender, EventArgs e)
         {
+            this.Parent.Text = "Export Auto CAD Data to Excel";
+
             MessageBox.Show("Auto CAD....");
         }
 
         private void picBoxSolidWorks_Click(object sender, EventArgs e)
         {
+            this.Parent.Text = "Export SolidWorks Data to Excel";
+
             MessageBox.Show("Solid Works....");
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Solid Works....");
 
-        }
 
         private void picBoxSolidEdge_Click(object sender, EventArgs e)
         {
+            this.Parent.Text = "Export Solid Edge Data to Excel";
+
             MessageBox.Show("Solid Edge....");
         }
     }
